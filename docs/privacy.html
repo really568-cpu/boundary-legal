@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>「边界」隐私政策 · Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --ink: #1c1c1e;
+      --muted: #5a5a5f;
+      --bg: #f7f7f8;
+      --card: #ffffff;
+      --line: #e4e4e7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f2f2f4;
+        --muted: #a3a3a8;
+        --bg: #121214;
+        --card: #1c1c1e;
+        --line: #2c2c2e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.3;
+      margin: 0 0 8px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 40px 0 10px;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 28px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px 26px;
+    }
+    .divider {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 48px 0;
+    }
+    p, li { color: var(--ink); }
+    li { margin: 6px 0; }
+    ul { padding-left: 1.25em; }
+    .muted { color: var(--muted); }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>「边界」隐私政策</h1>
+      <p class="updated">更新日期：2026 年 9 月 27 日</p>
+
+      <p>「边界」是一款 iPhone 上的思考框架备忘录 App。本政策说明我们如何处理你的信息。我们的原则是：把处理做到最少，你的思考内容默认只留在你自己的设备上。</p>
+
+      <h2>1. 默认只存在你的设备上</h2>
+      <p>你的思考记录与文档——包括标题、所选思考框架、各输入区里的条目，以及空白页正文——默认只保存在你的设备本地（App 的本地存储目录），不会自动上传到任何服务器。</p>
+      <p>App 还会在系统 Keychain 中保存一份随安装生成的匿名身份凭据，用于识别 AI 额度与订阅权益；Keychain 由系统加密保护。</p>
+
+      <h2>2. 什么时候会发生上传</h2>
+      <p>只有你主动点「开始分析」使用 AI 功能时，App 才会把<strong>当前这一份文档</strong>的以下内容发送到我们自建的代理服务（boundary-ai-proxy.boundary-really568.workers.dev）：</p>
+      <ul>
+        <li>文档标题；</li>
+        <li>所选思考框架的名称与标识；</li>
+        <li>各输入区里的条目内容；</li>
+        <li>空白页正文（如有）。</li>
+      </ul>
+      <p>同一时刻只会发送你正在分析的那一份文档，其它文档不会被发送。代理服务会再把上述内容转交给模型服务商（DeepSeek）以生成分析结果。代理服务本身不保存你的文档正文，只在服务端记录状态码与额度计数。</p>
+
+      <h2>3. 我们还会收集什么</h2>
+      <p>为判断额度、防止滥用和识别订阅状态，服务端会保存：</p>
+      <ul>
+        <li>一份随安装生成的匿名标识（anonymousID）及其凭据的哈希（不保存明文凭据）；</li>
+        <li>订阅权益信息（如你有订阅）；</li>
+        <li>与设备和网络相关的风控计数，例如按日 / 按月统计请求次数（可能包含你的出口 IP 作为计数键）。</li>
+      </ul>
+      <p>我们不读取、不收集你的通讯录、位置或相册。</p>
+
+      <h2>4. 我们不做什么</h2>
+      <ul>
+        <li>不做广告；</li>
+        <li>不做跨 App 或跨站点的用户追踪；</li>
+        <li>不采集通讯录、位置、相册；</li>
+        <li>不把你的内容用于训练我们自己的模型；模型服务商按其自身条款处理你发送给它的内容。</li>
+      </ul>
+
+      <h2>5. AI 是可选的</h2>
+      <p>不使用 AI（不点「开始分析」）时，不会发生任何外发，你的所有内容都只保存在设备上。</p>
+
+      <h2>6. 你的控制权</h2>
+      <ul>
+        <li>你可以随时在 App 内删除任意记录或整个思考主题；</li>
+        <li>AI 功能由你手动触发，不触发就不上传；</li>
+        <li>删除记录或卸载 App 后，本地保存的文档内容随之删除。</li>
+      </ul>
+
+      <h2>7. 联系我们</h2>
+      <p>如对本政策有疑问，请通过 App Store 页面上的开发者联系方式联系我们。邮箱（占位，上线前替换）：privacy@example.com。</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="card" lang="en">
+      <h1>Boundary Privacy Policy</h1>
+      <p class="updated">Last updated: September 27, 2026</p>
+
+      <p>Boundary is an iPhone app for keeping notes using thinking frameworks. This policy explains how we handle your information. Our principle is to process as little as possible and, by default, keep your thinking content on your own device.</p>
+
+      <h2>1. Stored on your device by default</h2>
+      <p>Your notes and documents — including their titles, the selected thinking framework, the entries in each input section, and any freeform body text — are stored only on your device by default (in the app's local storage), and are not automatically uploaded to any server.</p>
+      <p>The app also stores an anonymous identity credential, generated per installation, in the system Keychain. It is used to track AI quota and subscription entitlement, and the Keychain is protected by the operating system.</p>
+
+      <h2>2. When information is uploaded</h2>
+      <p>Only when you tap "Start analysis" to use the AI feature does the app send the following from <strong>the single document you are analyzing</strong> to our own proxy service (boundary-ai-proxy.boundary-really568.workers.dev):</p>
+      <ul>
+        <li>the document title;</li>
+        <li>the name and identifier of the selected thinking framework;</li>
+        <li>the entries in each input section; and</li>
+        <li>any freeform body text.</li>
+      </ul>
+      <p>Only the one document you are analyzing is sent at a time; no other documents are sent. The proxy service then forwards that content to a model provider (DeepSeek) to generate the result. The proxy service does not store your document content; on the server side it records only status codes and quota counters.</p>
+
+      <h2>3. What else we collect</h2>
+      <p>To enforce quotas, prevent abuse, and recognize subscription status, the server stores:</p>
+      <ul>
+        <li>a random anonymous identifier generated per installation (anonymousID) and a hash of its credential (not the plaintext credential);</li>
+        <li>subscription entitlement information, if you have a subscription; and</li>
+        <li>device- and network-related risk counters, such as daily or monthly request counts (which may use your egress IP address as a counter key).</li>
+      </ul>
+      <p>We do not read or collect your contacts, location, or photo library.</p>
+
+      <h2>4. What we do not do</h2>
+      <ul>
+        <li>We do not show advertising;</li>
+        <li>we do not track you across apps or websites;</li>
+        <li>we do not collect your contacts, location, or photo library; and</li>
+        <li>we do not use your content to train our own models; the model provider handles content you send to it under its own terms.</li>
+      </ul>
+
+      <h2>5. AI is optional</h2>
+      <p>If you do not use AI (you do not tap "Start analysis"), nothing is sent anywhere, and all of your content stays on your device.</p>
+
+      <h2>6. Your control</h2>
+      <ul>
+        <li>You can delete any record or an entire thinking topic in the app at any time;</li>
+        <li>AI is triggered by you, so nothing is uploaded unless you trigger it; and</li>
+        <li>when you delete records or uninstall the app, locally stored document content is removed.</li>
+      </ul>
+
+      <h2>7. Contact us</h2>
+      <p>If you have questions about this policy, please contact the developer via the App Store page. Email (placeholder, to be replaced before launch): privacy@example.com.</p>
+    </div>
+  </main>
+</body>
+</html>
