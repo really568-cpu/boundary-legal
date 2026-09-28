@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — BOUNDARY</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 6rem;
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1c1c1e; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e5e5e7; background: #0b0b0c; } }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+  .meta { color: #8e8e93; font-size: .875rem; margin-bottom: 2.5rem; }
+  .lead { font-size: 1.05rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: .75rem 0; font-size: .94rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #d1d1d6; vertical-align: top; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #2c2c2e; } }
+  th { font-weight: 600; }
+  code { font-size: .9em; }
+  .note { border-left: 3px solid #d1d1d6; padding-left: .9rem; color: #636366; }
+  @media (prefers-color-scheme: dark) { .note { border-color: #3a3a3c; color: #aeaeb2; } }
+  hr { border: 0; border-top: 1px solid #d1d1d6; margin: 4rem 0; }
+  @media (prefers-color-scheme: dark) { hr { border-color: #2c2c2e; } }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">BOUNDARY &middot; Last updated: <!-- REPLACE_DATE -->[DATE]</p>
+
+<p class="lead">BOUNDARY is a local-first thinking tool. Your notes, your answers, and your conclusions are stored on your device. The only feature that sends anything off your device is <strong>AI assistance</strong>, which you must opt into, and which is the subject of most of this policy.</p>
+
+<h2>1. Who is responsible for your data</h2>
+<p>The data controller is <strong>TAO QINAN</strong>, the developer of BOUNDARY.</p>
+<p>Contact: <a href="mailto:<!-- REPLACE_EMAIL -->[EMAIL]"><!-- REPLACE_EMAIL -->[EMAIL]</a><br>
+Address: <!-- REPLACE_ADDRESS -->[ADDRESS]</p>
+
+<h2>2. What stays on your device</h2>
+<p>The following is stored on your device only and is never transmitted to us:</p>
+<ul>
+  <li>the notes and answers you write while working through a thinking model;</li>
+  <li>the conclusions you reach and any files you export;</li>
+  <li>your app settings and preferences.</li>
+</ul>
+<p>We cannot read, access, or recover this content. If you delete the app, it is deleted with it. To keep a copy, use the export feature.</p>
+
+<h2>3. What we do not collect</h2>
+<p>We do not collect your name, email address, phone number, contacts, location, photos, or health data. BOUNDARY does not require an account, and there is no sign-in.</p>
+
+<h2>4. What leaves your device, and only when you choose it</h2>
+
+<h3>4.1 AI assistance</h3>
+<p>When — and only when — you use AI assistance, the following is sent so that a response can be generated:</p>
+<ul>
+  <li>the title of the document you are working on;</li>
+  <li>the framework you selected;</li>
+  <li>the text you have written in each section of that document;</li>
+  <li>a randomly generated installation identifier and the app language.</li>
+</ul>
+<p>Nothing is transmitted until you accept the in-app explanation shown before your first AI request. You can turn AI assistance off at any time in Settings, and the app remains fully usable without it.</p>
+<p>Not sent: your other saved documents, your device name, your contacts, your location, or any data unrelated to the request.</p>
+
+<h3>4.2 How the request travels</h3>
+<p>AI requests are routed through our own proxy service, hosted on Cloudflare Workers, and then forwarded to DeepSeek for generation. The proxy handles authentication and usage limits. <strong>It does not record the content of your document in its logs.</strong> We only record request status and usage counts.</p>
+
+<h3>4.3 Diagnostic data</h3>
+<p>If you have enabled Apple's system setting "Share with App Developers", Apple may provide us with crash logs and basic performance data. This does not include the content of your notes. You can turn it off at any time in iOS Settings.</p>
+
+<h2>5. Service providers</h2>
+<p>We share data only as described below.</p>
+<table>
+  <tr><th>Provider</th><th>What it receives</th><th>Why</th></tr>
+  <tr><td>Cloudflare (Workers)</td><td>The AI request, processed in transit</td><td>Hosting our proxy service</td></tr>
+  <tr><td>DeepSeek</td><td>The text of the AI request you initiate</td><td>Generating the AI response</td></tr>
+  <tr><td>Apple Inc.</td><td>Your purchase and subscription status</td><td>Processing in-app purchases. We never receive your payment details</td></tr>
+</table>
+<p>We do not sell your personal data, we do not use it for advertising, and we do not use your content to train AI models.</p>
+
+<h2>6. Legal basis for processing (GDPR)</h2>
+<p>If you are in the European Economic Area or the United Kingdom:</p>
+<ul>
+  <li><strong>Consent</strong> — for sending your document text to the AI provider. This is the only processing activity involving your content, and you can withdraw consent at any time by turning AI assistance off in Settings.</li>
+  <li><strong>Performance of a contract</strong> — to provide the app and validate your subscription.</li>
+  <li><strong>Legitimate interests</strong> — to keep the service secure and to fix crashes.</li>
+</ul>
+
+<h2>7. International data transfers</h2>
+<p>Our service providers may process data outside your country, including in the United States and in China. Where required, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses, and we maintain data processing agreements with our providers.</p>
+<p class="note"><strong>Notice for users in Japan:</strong> where your personal information is transferred to a third party located outside Japan, we provide information about that transfer and about the recipient's data protection measures as required by the Act on the Protection of Personal Information (APPI).</p>
+
+<h2>8. Data retention</h2>
+<ul>
+  <li><strong>Your notes and conclusions</strong> — stored on your device until you delete them or uninstall the app. We never hold a copy.</li>
+  <li><strong>AI requests</strong> — processed to generate a response. Our proxy does not retain the content. Our AI provider retains requests in accordance with its own retention policy, which we do not control.</li>
+  <li><strong>Usage counters</strong> — we retain an anonymous usage count linked to a randomly generated installation identifier, so that free and subscription usage limits work correctly.</li>
+  <li><strong>Purchase records</strong> — retained by Apple, and by us only as needed for accounting and tax obligations.</li>
+</ul>
+
+<h2>9. Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct, delete, restrict, or object to the processing of your personal data, and to receive it in a portable format. You may withdraw consent at any time.</p>
+<p>To exercise any of these rights, contact <a href="mailto:<!-- REPLACE_EMAIL -->[EMAIL]"><!-- REPLACE_EMAIL -->[EMAIL]</a>. We respond within 30 days.</p>
+<p><strong>California residents:</strong> under the CCPA/CPRA you have the right to know what personal information we collect, to request its deletion, and to opt out of the sale or sharing of personal information. We do not sell or share personal information as defined by the CPRA.</p>
+
+<h3>Deleting your data</h3>
+<ul>
+  <li><strong>Your notes and documents</strong> — delete them in the app, or use <em>Settings &rarr; Delete All Data</em>. Uninstalling the app also removes them from your device.</li>
+  <li><strong>Your usage counters</strong> — email us and we will delete the anonymous record associated with your installation identifier.</li>
+  <li><strong>Purchase data</strong> — managed through your Apple ID. Use <em>Restore Purchases</em> to re-enable a subscription on a new device.</li>
+</ul>
+
+<h2>10. Exporting your data</h2>
+<p>Every thinking session can be exported as a file from within the app. Because your content is stored locally, you can back it up at any time without asking us.</p>
+
+<h2>11. Children's privacy</h2>
+<p>BOUNDARY is not directed to children under 13, or the applicable minimum age in your jurisdiction. We do not knowingly collect personal data from children.</p>
+
+<h2>12. Security</h2>
+<p>Your content is protected by your device's own security. Data sent during an AI request is encrypted in transit. No method of transmission is completely secure, and we cannot guarantee absolute security.</p>
+
+<h2>13. AI limitations</h2>
+<p>AI assistance in BOUNDARY is provided to help you think, not to think for you. AI output can be incomplete or incorrect and should not be relied on as a substitute for professional judgement. <strong>BOUNDARY does not provide medical, psychological, legal, or financial advice.</strong></p>
+
+<h2>14. Changes to this policy</h2>
+<p>We may update this policy. Material changes will be communicated by updating the date at the top of this page or by notice within the app. If we introduce an account system or cloud sync in the future, we will update this policy and ask for your consent before any of your content is uploaded.</p>
+
+<h2>15. Contact</h2>
+<p>TAO QINAN — developer of BOUNDARY<br>
+Email: <a href="mailto:<!-- REPLACE_EMAIL -->[EMAIL]"><!-- REPLACE_EMAIL -->[EMAIL]</a><br>
+Address: <!-- REPLACE_ADDRESS -->[ADDRESS]</p>
+
+<hr>
+
+<h1 lang="zh-Hans">隐私政策</h1>
+<p class="meta" lang="zh-Hans">BOUNDARY（边界）&middot; 最后更新：<!-- REPLACE_DATE -->[DATE]</p>
+
+<div lang="zh-Hans">
+<p><strong>一句话说明：</strong>BOUNDARY 是本地优先的思考工具。你的笔记、你的填写内容和你的结论都存在你自己的设备上。唯一会把内容发出去的功能是 <strong>AI 辅助</strong>，它必须由你主动开启。</p>
+
+<h2>我们收集什么</h2>
+<p>我们不收集你的姓名、邮箱、电话、通讯录、位置、照片或健康数据。App 不需要注册账号，也没有登录。</p>
+
+<h2>什么留在你的设备上</h2>
+<p>你写的笔记、答案、结论和导出的文件，全部只存在你的设备上，我们无法读取。删除 App 即删除这些内容，需要留存请使用导出功能。</p>
+
+<h2>什么会离开你的设备</h2>
+<p>只有在你使用 AI 辅助时，以下内容才会被发送：当前文档的标题、你选择的思考框架、你在各输入区写下的文字，以及一个随机生成的安装标识和 App 语言。在你首次同意之前，不会发送任何内容。</p>
+<p>不会发送：你其他的文档、你的设备名称、通讯录、位置，以及任何与本次请求无关的数据。</p>
+
+<h2>请求经过哪里</h2>
+<p>AI 请求会先经过我们自建的代理服务（托管在 Cloudflare Workers），再转发给 DeepSeek 生成结果。代理只做身份校验和额度计数，<strong>不记录你的正文内容</strong>。</p>
+
+<h2>服务商</h2>
+<p>Cloudflare：承载代理服务；DeepSeek：生成 AI 回复；Apple：处理订阅与内购。我们不会出售你的个人数据，不会用于广告，也不会用你的内容训练 AI 模型。</p>
+
+<h2>数据保留与删除</h2>
+<p>笔记和结论只存在你的设备上。代理不保留请求内容。我们会保留一份与随机安装标识关联的匿名额度计数，用于让免费额度和订阅额度正常工作，你可以随时发邮件要求删除。</p>
+
+<h2>你的权利</h2>
+<p>你可以随时要求查阅、更正或删除我们持有的关于你的数据。联系方式：<a href="mailto:<!-- REPLACE_EMAIL -->[EMAIL]"><!-- REPLACE_EMAIL -->[EMAIL]</a>。</p>
+
+<h2>AI 能力边界</h2>
+<p>AI 辅助是帮你思考，不是替你做决定。AI 的输出可能不完整或有误，不应作为专业判断的替代。<strong>BOUNDARY 不提供医疗、心理、法律或财务建议。</strong></p>
+</div>
+
+</body>
+</html>
